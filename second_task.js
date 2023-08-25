@@ -30,9 +30,11 @@ console.log(arrayOfEvens(initialArray2));
 
 function createArray(element) {
     newArray = [];
-    for (let i = element; i < 30; i++) {
-        newArray.push(i + element);
-    };
+    let newValue = element;
+    while (newValue <= 30) {
+        newArray.push(newValue);
+        newValue += element;
+      }
     return newArray;
 }
 
